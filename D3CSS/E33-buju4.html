@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三列布局2</title>
+    <style>
+        body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+            margin: 0;
+            padding: 0
+        }
+
+        .top {
+            height: 100px;
+            width: 960px;
+            border: 1px solid red;
+            background-color: yellow;
+            margin: 0 auto;
+        }
+        .mainpart {
+            overflow: hidden;
+            width: 960px;
+            margin: 0 auto;
+        }
+        .left {
+            height: 300px;
+            width: 100px;
+            border:1px solid green;
+            background-color: lightgreen;
+            float: left;
+        }
+        .right {
+            height: 300px;
+            width: 100px;
+            border:1px solid green;
+            background-color: lightgreen;
+            float: right;
+        }
+        .middle {
+            height: 300px;
+            width: 756px;
+            border:1px solid blue;
+            background-color: lightblue;
+            margin-left: 102px;
+        }
+        .foot {
+            height: 100px;
+            width: 960px;
+            border:1px solid yellow;
+            background-color: pink;
+            clear:both;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+        <div class="top">顶部</div>
+        <div class="mainpart">
+                <div class="left">左边</div>
+                <div class="right">右边</div>
+                <div class="middle">中间</div>
+        </div>
+        <div class="foot">底部</div>
+</body>
+</html>

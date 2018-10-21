@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>布局1</title>
+</head>
+<style>
+     body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+            margin: 0;
+            padding: 0
+        }
+    div {
+        border:1px solid red;
+    }
+    .top {
+        height:100px;
+        width: 960px;
+
+        margin:0 auto;
+
+         border:1px solid yellow;
+    }
+    .contentpart {
+        width: 960px;
+       overflow: hidden;
+       margin:0 auto;
+     }
+    .left-nav {
+        height: 500px;
+        width: 200px;
+
+        float: left;
+
+        border:1px solid blue;
+    }
+    .main-con {
+        height: 500px;
+        width:756px;
+
+        float:right;
+
+        border:1px solid black;
+    }
+    .foot {
+        width: 960px;
+        margin:0 auto;
+
+              border:1px solid yellow;
+    }
+</style>
+<body>
+    <div class="top">header</div>
+    <div class="contentpart">
+        <div class="left-nav">left</div>
+        <div class="main-con">main</div>
+    </div>
+    <div class="foot">footer</div>
+</body>
+</html>

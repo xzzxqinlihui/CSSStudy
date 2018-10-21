@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>定位</title>
+</head>
+<style>
+     body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+            margin: 0;
+            padding: 0
+        }
+    .rl {
+        height: 100px;
+        width: 100px;
+        border: 1px solid red;
+        background-color: goldenrod;
+        
+        /* 设置了相对定位之后，标签的css就可以设置left,right,top,bottom 的css属性*/
+        position: relative;
+        /* 相对于元素原来的位置，进行移动 */
+        left: 10px;
+        top:20px;
+        }
+        .parent {
+        height: 400px;
+        width: 400px;
+        border: 1px solid red;
+        background-color: greenyellow;
+            /* 子绝父相 */
+            /* 如果父容器设置了relative后，那么它的子元素如果设置了absolute定位，那么它的子元素就按照父容器进行绝对定位 */
+        position:relative;
+        }
+
+        .ab {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            border:1px solid red;
+
+            position: absolute;
+            left:100px;
+            top:100px;
+        }
+        .fix {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border:1px solid red;
+
+            position:fixed;
+            bottom:10px;
+            right: 10px;
+        }
+</style>
+<body>
+    <div class="rl">
+        我是div  相对定位
+    </div>
+
+    <div class="parent">
+        我是div 父容器
+        <div class="ab">
+            我是div  绝对定位
+        </div>
+    </div>
+
+    <div class="fix">
+        我是div 固定定位
+    </div>
+</body>
+</html>

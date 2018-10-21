@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高度塌陷</title>
+    <style>
+        .child {
+
+            height: 100px;
+            width: 100px;
+
+            border: 1px solid red;
+
+            float: left;
+
+        }
+
+        .parent {
+            border: 1px solid purple;
+            /* 解决高度塌陷问题 */
+            /* 在父元素中设置overflow */
+            overflow: hidden;
+        }
+
+        .c3 {
+            height: 300px;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+
+            border: 1px solid pink;
+            
+            float: left;
+            /* 内容不会被修剪，会呈现在元素框之外（默认值） */
+            /* overflow: visible; */
+            /* 溢出内容会被修剪，并且被修剪的内容是不可见的 */
+            /* overflow: hidden; */
+            /* 在需要时候产生滚动条，即自适应须要显示的内容 */
+            /* overflow: auto; */
+            /* 溢出内容会被修剪，且浏览器会始终显示滚动条 */
+            /* overflow: scroll; */
+        }
+
+        .p1 {
+            /* 内容不会被修剪，会呈现在元素框之外（默认值） */
+            overflow: visible;
+        }
+
+        .p2 {
+            /* 溢出内容会被修剪，并且被修剪的内容是不可见的 */
+            overflow: hidden;
+        }
+
+        .p3 {
+            /* 在需要时候产生滚动条，即自适应须要显示的内容 */
+            overflow: auto;
+        }
+
+        .p4 {
+            /* 溢出内容会被修剪，且浏览器会始终显示滚动条 */
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child c3"></div>
+    </div>
+    <div class="parent">
+        <p class="p1">
+            起初，张水生利用职权为一些土地中介机构介绍业务拿回扣，但欲望渐渐膨胀，他开始认为自己在职务上有便利，在人脉上有资源，在技术上也有优势，只拿一点点回扣太少了，而且风险还大。
+
+            　　为了谋取更多利益，并规避风险，2002年11月，张水生以妻子江某的名义成立了九江金科土地勘测评估公司。2010年3月，张水生又以妻弟的名义成立江西通宝拍卖公司。这两个公司专门从事与张水生分管领域紧密相关的业务。
+
+        </p>
+        <p class="p2">
+            起初，张水生利用职权为一些土地中介机构介绍业务拿回扣，但欲望渐渐膨胀，他开始认为自己在职务上有便利，在人脉上有资源，在技术上也有优势，只拿一点点回扣太少了，而且风险还大。
+
+            　　为了谋取更多利益，并规避风险，2002年11月，张水生以妻子江某的名义成立了九江金科土地勘测评估公司。2010年3月，张水生又以妻弟的名义成立江西通宝拍卖公司。这两个公司专门从事与张水生分管领域紧密相关的业务。
+
+        </p>
+        <p class="p3"> 
+            起初，张水生利用职权为一些土地中介机构介绍业务拿回扣，但欲望渐渐膨胀，他开始认为自己在职务上有便利，在人脉上有资源，在技术上也有优势，只拿一点点回扣太少了，而且风险还大。
+
+            　　为了谋取更多利益，并规避风险，2002年11月，张水生以妻子江某的名义成立了九江金科土地勘测评估公司。2010年3月，张水生又以妻弟的名义成立江西通宝拍卖公司。这两个公司专门从事与张水生分管领域紧密相关的业务。
+
+        </p>
+        <p class="p4">
+            起初，张水生利用职权为一些土地中介机构介绍业务拿回扣，但欲望渐渐膨胀，他开始认为自己在职务上有便利，在人脉上有资源，在技术上也有优势，只拿一点点回扣太少了，而且风险还大。
+
+        </p>
+    </div>
+
+</body>
+
+</html>

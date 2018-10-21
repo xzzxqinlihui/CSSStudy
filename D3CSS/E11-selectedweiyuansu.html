@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素选择器</title>
+
+    <style>
+        /* 第一个必须是span标签，第二 必须是第一个孩子 */
+        span:first-child {
+            color:red;
+            font-size: 50px;
+        }
+        /* 段落的首个字符 */
+        p::first-letter {
+            font-size: 50px;
+            color:green;
+        }
+        /* 段落的第一行 */
+        p::first-line {
+            color:gold;
+        }
+        /* 元素之前 */
+        #temp::before {
+            content: "===========";
+
+        }
+        /* 元素之后 */
+        #temp::after {
+            content: "---------------";
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="temp">
+        <span>我是老大</span>
+        <span>我是老二</span>
+        <span>我是老三</span>
+    </div>
+
+    <p>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </p>
+
+    <p>
+    巴基斯坦总理伊姆兰·汗8日在政府高级别会议上强调，应充分重视在中巴经济走廊框架下尽快建设经济特区，此举将有助于巴基斯坦本地产业实现现代化，并为年轻人提供大量就业岗位。
+
+    巴基斯坦总理办公室当天发表声明说，伊姆兰·汗在这次会议上表示，早日建成中巴经济走廊相关项目将有助于发掘巴基斯坦和中国两国经济关系的潜力，也将有助于整个地区的经济发展。他呼吁更多外部投资进入中巴经济走廊。
+
+    伊姆兰·汗重申，加强巴中全天候战略合作伙伴关系是巴基斯坦外交的基石。
+
+    声明说，中巴经济走廊建设是巴基斯坦在社会、农业以及其他领域向中国学习的良机。尤其是巴基斯坦农业领域，可以在中巴经济走廊框架下学习到中国的相关技术，提高农业产量。
+
+    </p>
+</body>
+
+</html>

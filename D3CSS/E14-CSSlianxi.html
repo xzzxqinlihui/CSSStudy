@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS综合练习</title>
+    <style>
+        /* 要求
+
+        1 菜单列表，鼠标悬停的时候，背景颜色为银灰色，字体颜色为白色 （#fff）
+        2 所有的新闻，鼠标悬停，北京色改为金色   字体颜色为白色
+        3 所有新闻的分组的标题 （军事新闻、财经新闻） 字体  18像素 字体加粗 字体颜色为绿色
+
+        */
+        ul.menu li a:hover {
+            background-color: silver;
+            color:#fff;
+        }
+        .news-list dd a:hover {
+            background-color: gold;
+            color:white;
+        }
+        .news-list dt {
+            font-size: 18px;
+            font-weight: bold;
+            color:green;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">军事</a></li>
+        <li><a href="#">财经</a></li>
+        <li><a href="#">体育</a></li>
+        <li><a href="#">关于</a></li>
+    </ul>
+
+    <dl class="news-list">
+        <dt>军事新闻</dt>
+        <dd><a href="#">中巴或联合生产翼龙2无人机 巴铁还想效仿枭龙经验</a></dd>
+        <dd><a href="#">美财政部：特朗普或下周正式将中国列为"汇率操纵国"</a></dd>
+        <dd><a href="#">难民免费住每月250欧元 意小城市长帮难民被软禁</a></dd>
+        <dd><a href="#">两岸关系不好陆配想弃台籍全家回大陆 台官方回应</a></dd>
+    </dl>
+
+    <dl class="news-list">
+        <dt>财经新闻</dt>
+        <dd><a href="#">恒大贾跃亭协议罗生门 补充协议成焦点 或有新接盘方</a></dd>
+        <dd><a href="#">碧桂园江西单价1万元精装修变毛坯 业主打砸售楼处</a></dd>
+        <dd><a href="#">证监会推小额快速审核机制 并购重组迎绿色通道</a></dd>
+    </dl>
+
+    <dl class="news-list">
+        <dt>体育新闻</dt>
+        <dd><a href="#">詹皇接班人罚球线起跳暴扣 超远滑翔演惊天战斧</a></dd>
+        <dd><a href="#">高视高尔夫教学铭仕课堂 强势握杆如何打直球</a></dd>
+        <dd><a href="#">央视新闻联播报道国象奥赛男女队双双夺冠</a></dd>
+    </dl>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>滑动门的练习</title>
+    <style>
+            /* 去掉默认的内边距和外边距 */
+            body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+            margin: 0;
+            padding: 0;
+        } 
+        ul li{
+            list-style: none;
+        }
+        .menu {
+            width: 960px;
+            /* height: 30px; */
+            margin: 0 auto;
+        }
+        .menu li {
+            float: left;
+            padding-left: 8px;
+            background: url(./imgs/left.png) no-repeat;
+            margin:0 -3px;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: red;
+            /* border:1px solid red; */
+            height:35px;
+            line-height: 35px;
+            float:left;
+            padding: 0 30px 0 10px;
+            background: url(./imgs/right.png) no-repeat right top;
+        }
+        .menu li a:hover {
+            color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">菜单1</a></li>
+        <li><a href="#">菜单2菜单2</a></li>
+        <li><a href="#">菜单3菜单3菜单3</a></li>
+        <li><a href="#">菜单4菜单4菜单4菜单4</a></li>
+        <li><a href="#">菜单5</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>属性选择器</title>
+    <style>
+        /* 简单属性选择器 */
+        span[class] {
+            color:green;
+        }
+        /* 拥有id属性的标签都被选出来 */
+        [id] {
+            font-size: 50px;
+        }
+        /* 根据属性值选择 */
+        span[id="4"] {
+            color:yellow;
+        }
+        /* 属性名全包含 */
+        span[id~="demo"] {
+            font-size:100px;
+        }
+        /* 属性模糊选择 */
+        /* class的属性值中有以val开头的 */
+        span[class^="val"] {
+            color:pink;
+        }
+         /* class的属性值中有以val结尾的 */
+         span[class$="val"] {
+            font-size:75px;
+        }
+        /* 属性模糊匹配 */
+          /* class的属性值中含有val的 */
+          span[class*="val"] {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <span class="cur demo">1</span>
+    <span>2</span>
+    <span id="num3" class = "darval">3</span>
+    <span id="num4" class="avala">4</span>
+    <span class="val123">5</span>
+</body>
+</html>

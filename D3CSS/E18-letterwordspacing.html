@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wordpacing和letterspacing</title>
+    <style>
+        p {
+            letter-spacing: 10px;
+            /* 设置行高 */
+            /* 设置倍数 */
+            /* line-height: 1.5; */
+            /* 设置像素值 */
+            /* line-height: 30px; */
+            font:normal bold 16px/1.5 "Microsoft YaHei";
+
+          }
+
+        div {
+            word-spacing: 10px;
+           
+
+        }
+
+        #div1 {
+           
+            /* 行高设置 居中 */
+            border: 1px solid red;
+            /* div的高度和行高设置成同样的数值，可以使文字上下居中 */
+            height: 100px;
+            line-height: 100px;
+            /* 使文字左右居中 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>
+           I like web 前端 这8个性冷淡品牌简约好看 中国独立学院升学率排行
+
+    </p>
+
+    <div>
+            I like web 前端   这8个性冷淡品牌简约好看 中国独立学院升学率排行
+
+    </div>
+    <div id = "div1">
+        我是div
+    </div>
+</body>
+</html>

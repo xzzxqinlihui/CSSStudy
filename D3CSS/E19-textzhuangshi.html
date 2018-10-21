@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文字装饰处理</title>
+    <style>
+        /* 去掉下划线 */
+        .u1 > li > a {
+            text-decoration: none;
+        }
+        
+        /* 去掉删除线 */
+        s {
+            text-decoration: none;
+        }
+        /* 下划线 上划线 删除线 都有的 */
+        .c1 {
+            text-decoration: underline overline line-through;
+        }
+        .c2 {
+            border: 1px solid red;
+           /* 设置对齐方式 默认left  还有 right center */
+            text-align: right;
+            height: 100px;
+        }
+        /* 首行缩进 */
+        .c1 {
+            text-indent: 2em;
+        }
+
+        /* 空白符处理 */
+        p.pre-demo {
+            white-space: pre;
+            text-decoration: none;
+        }
+
+        .p3 {
+            border:1px solid green;
+            /* 设置宽和高 */
+            width: 200px;
+            height: 100px;
+            /* 设置为  不能换行 */
+            white-space: nowrap;
+            /* 超出的部分隐藏了 */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <ul class="u1">
+        <li><a href="#">好声音：选手旦增尼玛夺冠</a></li>
+        <li><a href="#">演员：吴秀波亲自演绎贺涵</a></li>
+        <li><a href="#">中餐厅：赵薇苏有朋等合唱</a></li>
+    </ul>
+
+    <s>删除线</s>
+
+    <p class="c1">
+            近年来，对消防职业化的热议不绝于耳。中国行政管理学会副秘书长沈荣华表示，武警消防官兵大多服役期满便退役，年轻消防员经常出现经验不足问题，导致人员和财产损失。而在很多发达国家，消防员都是专职消防员，经过长年累月的实战具备了丰富的经验。
+    </p>
+
+    <div class= "c2"> 
+        我是div
+    </div>
+
+    <p class="pre-demo">
+        var t = 19;
+        var m = 9 * t;
+        console.log(m);
+    </p>
+
+    <p class="p3">
+            剧情梗概呢，是万科开了一次内部大会，会上万科高层声嘶力竭地强调 “未来三年万科的终极目标是“活下去”。此言一出，引得人心惶惶，毕竟瘦死的骆驼比马大，作为曾经的地产老大，万科真的到了这一步了
+    </p>
+</body>
+</html>

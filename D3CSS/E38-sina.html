@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新浪网练习</title>
+    <style>
+        /* 去掉默认的内边距和外边距 */
+        body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+            margin: 0;
+            padding: 0;
+        }
+        /* 设置全局字体 */
+        body {
+            font:12px/20px "Microsoft YaHei",SimSun;
+        }
+        /* 去掉列表默认的样式 */
+        ul,li {
+            list-style:none;
+        }
+        a {
+            text-decoration: none;
+            color:#4c4c4c;
+        }
+
+        /* 设置顶部导航栏的通栏的盒子 */
+        .tn {
+            height: 42px;
+            border-top:4px solid #ff8500;
+            border-bottom: 1px solid #edeef0;
+            /* 将行高和盒子的高度设置为相同值，可是内容上下居中 */
+            line-height: 42px;
+        }
+        /* 设置版心盒子居中对齐 */
+        .tn-main {
+            margin:0 auto;
+            width:960px;
+        }
+
+        /* 设置左侧的网站导航 */
+        .tn-nav {
+            float: left;
+        }
+        .tn-nav li{
+            float: left;
+            padding:0 15px;
+        }
+        /* 当鼠标 移动上来的时候，背景颜色变成灰色，字体颜色变成  黄色 */
+        .tn-nav li:hover ,.tn-nav li:hover a {
+            background-color: #edeef0;
+            color: #ff8500;
+        }
+
+        /* 设置右侧的用户导航 */
+        .tn-person {
+            float:right;
+        }
+        .tn-person > li {
+            float: left;
+            padding:0 15px;
+        }
+        /* 鼠标 移动上去的时候，设置背景色是灰色，字体是黄色 */
+        .tn-person > li:hover ,.tn-person > li:hover >a {
+            background-color: #edeef0;
+            color:#ff8500;
+        }
+
+        /* 微博弹出层设计 */
+        .weibo-box {
+            display: none;
+            /* 设置弹出层微绝对定位，防止对默认文档进行干扰 ??? */
+            position: absolute;
+        }
+        .weibo:hover .weibo-box {
+            display: block;
+        }
+        weibo-box a {
+            display: block;
+        }
+        .weibo li:hover, .weibo li a:hover {
+            background-color: #edeef0;
+            color: #ff8500;
+        } 
+        .weibo-box li {
+            border:1px solid #ff8500;
+            width: 104px;
+            height: 31px;
+            line-height: 31px;
+            border-top:none;
+            margin-left: -15px;
+            padding:0 15px;
+        }
+
+
+
+
+
+        #d1 {
+            background-color: yellowgreen;
+            border:1px solid red;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tn">
+        <div class="tn-main">
+            <!-- 左侧的导航栏 -->
+            <ul class="tn-nav">
+                <li><a href="#">新浪首页</a></li>
+                <li><a href="#">手机新浪网</a></li>
+                <li><a href="#">移动客户端</a></li>
+            </ul>
+            <!-- 右侧的网站用户栏 -->
+            <ul class="tn-person">
+                <li><a href="#">登录</a></li>
+                <li class="weibo">
+                    <a href="#">微博</a>
+                    <ul class="weibo-box">
+                        <li><a href="#">私信</a></li>
+                        <li><a href="#">评论</a></li>
+                        <li><a href="#">@我</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">邮箱</a></li>
+                <li><a href="#">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="d1">
+
+    </div>
+</body>
+
+</html>

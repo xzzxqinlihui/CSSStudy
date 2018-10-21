@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>z-index</title>
+    <style>
+        body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+            margin: 0;
+            padding: 0;
+        }
+        .ab {
+            height: 300px;
+            width: 300px;;
+            border:1px solid red;
+            position:absolute;
+        }
+        .d1{
+            z-index:1;
+            left:100px;
+            top:100px;
+            background-color: red;
+        }
+        .d2 {
+            z-index:2;
+            left:200px;
+            top:200px;
+            background-color: yellow;
+        }
+        .d3 {
+            z-index:3;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ab d1"></div>
+    <div class="ab d2"></div>
+    <div class="ab d3"></div>
+</body>
+</html>

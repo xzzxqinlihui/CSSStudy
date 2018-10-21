@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>气泡案例 左侧三角形</title>
+    <style>
+         /* 去掉默认的内边距和外边距 */
+        body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+            margin: 0;
+            padding: 0;
+        }
+        /* 设置气泡体 */
+        .main {
+            width: 600px;
+            margin:100px auto;
+        }
+        .btn1 {
+            position: relative;
+            width: 100px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            color:#eee;
+            border:1px solid #90c;
+            background-color: #a3f;
+
+            border-radius: 3px;
+          
+           
+        }
+            /* 利用伪元素设置气泡 的三角形 */
+        .btn1::before {
+            /* 伪元素必须有content 属性 */
+            content: "";
+            position: absolute;
+            left:-18px;
+            top:5px; 
+            display:block;
+            width: 0;
+            height: 0;
+            border:9px solid #90c;
+            border-color: transparent #90c transparent transparent ;
+            border-style: dashed solid dashed dashed;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="btn1">
+            左侧气泡按钮
+        </div>
+    </div>
+</body>
+</html>

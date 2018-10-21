@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS层叠性和继承性</title>
+
+  <style>
+    p {
+        color :red;
+        font-size:40px;
+    }
+    /* 该颜色会覆盖上述的红色 */
+    p {
+        color:green;
+    }
+
+    /* 继承性  父容器设置的样式， 子容器也可以享受同等待遇 */
+    /* a 标签比较特殊  不继承颜色 */
+    /* 如果让a继承父容器颜色  可以这样做*/
+    a {
+        color:inherit;
+    }
+  </style>
+</head>
+<body>
+    <p>
+        大家好，我在学习web前端，请多多指教
+        <span>我是span标签1</span>
+        <a href="#">我是超链接</a>
+    </p>
+
+    <span>
+        我是span标签2
+    </span>
+</body>
+</html>

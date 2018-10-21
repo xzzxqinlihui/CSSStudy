@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>闭合浮动</title>
+    <style>
+        div {
+            border:1px solid yellow;
+            /* overflow: hidden; */
+        }
+        #div1 {
+            width: 200px;
+            height: 200px;
+
+            border: 1px solid red;
+
+            float: right;
+
+            background-color: pink;
+        }
+        /* 在div设置 其子元素则会自动填充 解决父元素塌陷问题 */
+        .clearfix::after,.clearfix::before {
+            content: " ";
+            display: table;
+        }
+        .clearfix::after {
+            clear: both;
+        }
+        .clearfix {
+            *zoom: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="clearfix">
+    <div id= "div1">
+        我是div
+    </div>
+    然而，九江市纪委调查组意外发现，除张水生外，时任九江市国土资源局党组成员、土地储备中心主任叶金印，时任九江市国土资源局副调研员、瑞昌市国土资源局局长舒明南，时任星子县国土资源局局长周敏，时任瑞昌市国土资源局局长助理陈新宝等人均存在严重的违纪违法问题。这起典型的国土系统窝案串案涉案人员中不仅有国土部门领导干部，还有数十个土地中介机构、房地产开发公司、工程建设公司以及一些金融机构的工作人员。该案涉案人员共113人，包括国土系统领导干部44人，其中处级干部4人、科级干部31人。
+</div>
+
+
+</html>

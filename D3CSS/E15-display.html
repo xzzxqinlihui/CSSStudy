@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>display</title>
+    <style>
+        /* 当前标签，从文档流中移除掉 */
+        .par {
+            display:none;
+        }
+
+        .block-span {
+            display: block;
+            width:100px;
+            height: 100px;
+            background-color: pink;
+        }
+        #imgtext {
+            width: 200px;
+            height:150px;
+        }
+        .block-span2 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="par">
+            人民网(7.650, -0.07, -0.91%)北京10月9日电 （朱江）据国家税务总局网站消息，税务总局今日对外公布“月收入2万元以下个税计算表”，个税计算表显示，从10月1日起，纳税人实际取得的工资、薪金所得，减除费用标准统一按照5000元/月执行，并执行新的税率表
+    </div>
+
+    <span class="block-span">我是span1</span>
+    <span class="block-span2">我是span2</span>
+
+    <!-- 行内块 -->
+    <img id="imgtext" src="./imgs/1.jpg" alt="风景图" title="风景图片">
+    <span>我是span3</span>
+</body>
+</html>

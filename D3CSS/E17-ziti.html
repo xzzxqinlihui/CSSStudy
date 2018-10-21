@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字体</title>
+    <style>
+        /* 利用em方法表示字体大小 */
+        #p1 {
+            font-size: 2em;
+        }
+        /* 利用px像素方法表示字体大小 */
+        #p2 {
+            font-size:28px;
+        }
+        /* 利用可选参数值 */
+        #p3 {
+            font-size:large;
+        }
+        /* 为了练习，将字体大小和字体分开 */
+        /* 表示字体 */
+        /* 用汉字 */
+        #p1 {
+            font-family: "宋体";
+        }
+        /* 用Unicode编码 */
+        #p2 {
+            font-family: "\u5b8b\u4f53";
+        }
+        /* 多个字体  */
+        #p3 {
+            font-family: tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+        }
+
+        /* 字体的加粗 */
+        /* 可以用属性值 */
+        #p1 {
+            font-weight: bold;
+        }
+        /* 可以用100-900 之间 100的整数倍数 */
+        #p2 {
+            font-weight: 500;
+        }
+
+
+        /* 字体的 斜体 */
+        #p3 {
+            font-style:italic;
+        }
+
+
+        /* font的综合设置字体 */
+        #p4 {
+            font:italic bold 16px/20px tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">
+        为了抹黑中国 美国媒体已经开始编故事了
+        外交部回应美方无端指责：中方光明磊落 问心无愧
+        侠客岛：中央这份最新文件 戳中多少基层干部痛处
+    </p>
+
+    <p id="p2">
+        消防部队移交应急管理部 消防官兵正式退出现役
+        揭秘武警八大警种何去何从：海警队伍转隶并入
+        陆配想弃台籍全家搬回大陆 台媒惊呼“前所未闻”
+    </p>
+    
+    <p id="p3">
+        深击|起死回生后的激进：投注多元化能否拯救锤子？
+        量子纠缠真超越光速吗?事实并非如此 汪根本不堪一击
+    </p>
+    <p id="p4">
+            广西警方摧毁跨国贩毒团伙 南宁破获特大传销案
+    </p>
+
+</body>
+</html>

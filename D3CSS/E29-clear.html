@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>清除浮动</title>
+    <style>
+        .fl {
+            width: 200px;
+            height: 300px;
+            border:1px solid green;
+
+            float: left;
+        }
+        .fr {
+            width: 200px;
+            height: 500px;
+            border:1px solid red;
+
+            float: right;
+        }
+        .footer {
+            clear:right;
+            border:1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="fl">左边</div>
+    <div class="fr">右边</div>
+    <div class="footer">底部</div>
+</body>
+</html>

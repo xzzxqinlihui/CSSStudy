@@ -1,0 +1,15 @@
+/*
+* 创建时间：2018年10月9日10:06:51
+* 创建人：123
+* 用于首页的样式控制
+*/
+p {
+    /* 设置背景颜色是silver */
+    background-color: silver;
+    /* 设置字体大小是30px */
+    font-size: 30px;
+}
+
+span {
+    font-size:14px;
+}

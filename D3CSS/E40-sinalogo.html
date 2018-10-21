@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新浪背景图片案例</title>
+    <style>
+        a {
+            display: inline-block;
+
+            width: 200px;
+            height: 100px;
+
+            line-height:100px;
+
+            background-image: url(./imgs/8.png);
+            background-repeat: no-repeat;
+
+            padding-left: 100px;
+        }
+        a:hover {
+            background-position: left bottom;
+        }
+        .bg {
+            background-image: url('./imgs/1.jpg');
+            width: 200px;
+            height: 200px;
+            background-position: center top;
+            /* 通过百分比来设置 */
+            /* background-position: 50% 80%; */
+            /* 通过设置坐标来设置 */
+            /* background-position: -50px -80px; */
+
+        }
+    </style>
+</head>
+<body>
+    <a href="#">新浪微博</a>
+    <div class="bg"></div>
+</body>
+</html>

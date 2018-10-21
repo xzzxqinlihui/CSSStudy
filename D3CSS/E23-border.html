@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>边框2</title>
+    <style>
+        div {
+            /* 设置内容部分的宽 和 高 */
+            width: 400px;
+            height: 400px;
+
+            /* 推荐使用这种：合写的方式  效率高 简洁  维护方便 */
+            border: 20px solid purple;
+
+            /* 当边框确实有不相同的情况的时候，可以使用 */
+            /* border-width: 30px;
+            border-style:dotted;
+            border-color: brown; */
+            
+            /* 不建议：控制到 具体的边框，效率低，另外兼容稍差 */
+            /* border-top-color: gold;
+            border-bottom-width: 50px;
+            border-right-style: dashed; */
+
+            /* 设置一个参数的时候：所有的边框都享受这个设置 */
+            /* border-color:red; */
+            /* 设置两个参数的时候：第一个参数 上下  第二个参数 左右 */
+            /* border-color:bule green; */
+            /* 设置三个参数的时候：上黄  左右黑  下绿 */
+            /* border-color:yellow black green; */
+            /* 设置四个参数的时候： 上 右 下 左  */
+            border-color: red green yellow green;
+
+        }
+        /* 其他三个须要注意的地方 */
+        /* 1 关于table  让你边框折叠*/
+        table {
+            border:2px solid pink;
+
+            /* 让边框折叠 表格是细边框 */
+            border-collapse: collapse;
+        }
+        /* 2 让表单的边框改为0 */
+        input {
+            /* 兼容所有浏览器 */
+            border:0 none;
+
+            /* 3  链接的虚线  文本框的蓝色边框  可以用这种方法去除 */
+            outline-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        我是内容
+    </div>
+    
+    <hr>
+    <input type="text">
+    <hr>
+ <table border="1">
+   <tr>
+       <td>1</td>
+       <td>2</td>
+   </tr>
+   <tr>
+       <td>3</td>
+       <td>4</td>
+   </tr>
+   <tr>
+       <td>5</td>
+       <td>6</td>
+   </tr>
+   <tr>
+       <td>7</td>
+       <td>8</td>
+   </tr>
+   <tr>
+       <td>9</td>
+       <td>0</td>
+   </tr>
+
+ </table>
+
+</body>
+</html>

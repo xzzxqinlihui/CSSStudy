@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三角形</title>
+    <style>
+        /* 去掉默认的内边距和外边距 */
+        body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+            margin: 0;
+            padding: 0;
+        } 
+       /* 设置三角形的方法 */
+        .bd {
+            width: 0;
+            height: 0;
+            border:100px solid red;
+            margin: 100px 10px;
+            border-color: red blue yellow green;
+            border-style: solid solid solid solid;
+        }
+        /* 设置三角形  朝上 */
+        .bd-up {
+            width: 0;
+            height: 0;
+            border:100px solid red;
+            margin: 100px 10px;
+            border-color:  transparent transparent yellow transparent;
+            border-style: dashed dashed  solid dashed ;
+        }
+        /* 设置三角形  朝左 */
+        .bd-left {
+            width: 0;
+            height: 0;
+            border:100px solid red;
+            margin: 100px 10px;
+            border-color:  transparent blue transparent transparent;
+            border-style: dashed solid dashed dashed ;
+        }
+        /* 设置三角形  朝右 */
+        .bd-right {
+            width: 0;
+            height: 0;
+            border:100px solid red;
+            margin: 100px 10px;
+            border-color:  transparent transparent transparent green;
+            border-style: dashed  dashed dashed solid ;
+        }
+        /* 设置三角形  朝下 */
+        .bd-down {
+            width: 0;
+            height: 0;
+            border:100px solid red;
+            margin: 100px 10px;
+            border-color:  transparent transparent yellow transparent;
+            border-style: dashed  dashed solid dashed  ;
+        }
+        div {
+            float: left;
+            /* margin-left: 10px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="bd"></div>
+
+    <div class="bd-up"></div>
+    <div class="bd-left"></div>
+    <div class="bd-right"></div>
+    <div class="bd-down"></div>
+</body>
+</html>
